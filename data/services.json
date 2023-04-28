@@ -1,0 +1,1514 @@
+[
+    {
+        "short": "nfx",
+        "clear": "Netflix",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "amp",
+        "clear": "Amazon Prime Video",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dnp",
+        "clear": "Disney Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "atp",
+        "clear": "Apple TV Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "itu",
+        "clear": "Apple iTunes",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "fuv",
+        "clear": "fuboTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hlu",
+        "clear": "Hulu",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hbm",
+        "clear": "HBO Max",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hmf",
+        "clear": "HBO Max Free",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pcp",
+        "clear": "Peacock",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "amz",
+        "clear": "Amazon Video",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "ply",
+        "clear": "Google Play Movies",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "yot",
+        "clear": "YouTube",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "pmp",
+        "clear": "Paramount Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fmn",
+        "clear": "Funimation Now",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "azp",
+        "clear": "AMC Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hbn",
+        "clear": "HBO Now",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rkc",
+        "clear": "The Roku Channel",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "koc",
+        "clear": "Kocowa",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ytr",
+        "clear": "YouTube Premium",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "yfr",
+        "clear": "YouTube Free",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hop",
+        "clear": "Hoopla",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tcw",
+        "clear": "The CW",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "cws",
+        "clear": "CW Seed",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "vdu",
+        "clear": "Vudu",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "vuf",
+        "clear": "VUDU Free",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "stz",
+        "clear": "Starz",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "crc",
+        "clear": "Criterion Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sho",
+        "clear": "Showtime",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pbs",
+        "clear": "PBS",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pfx",
+        "clear": "Pantaflix",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "fxn",
+        "clear": "FXNow",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tbv",
+        "clear": "Tubi TV",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "knp",
+        "clear": "Kanopy",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "com",
+        "clear": "Comedy Central",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "msf",
+        "clear": "Microsoft Store",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "cru",
+        "clear": "Crunchyroll",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rbx",
+        "clear": "Redbox",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "snx",
+        "clear": "Sun Nxt",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mxg",
+        "clear": "Max Go",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "abc",
+        "clear": "ABC",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "drv",
+        "clear": "DIRECTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "crk",
+        "clear": "Crackle",
+        "subscription": true,
+        "adsupported": true,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "amt",
+        "clear": "AMC Theatres",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "amc",
+        "clear": "AMC",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fnd",
+        "clear": "Fandor",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "cts",
+        "clear": "Curiosity Stream",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "nbc",
+        "clear": "NBC",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "epx",
+        "clear": "Epix",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ffm",
+        "clear": "Freeform",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "his",
+        "clear": "History",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sfy",
+        "clear": "Syfy",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "aae",
+        "clear": "A&E",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "lft",
+        "clear": "Lifetime",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "shd",
+        "clear": "Shudder",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "scb",
+        "clear": "Screambox",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "act",
+        "clear": "Acorn TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sdn",
+        "clear": "Sundance Now",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pcf",
+        "clear": "Popcornflix",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "gdc",
+        "clear": "GuideDoc",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "bbo",
+        "clear": "BritBox",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rlz",
+        "clear": "realeyz",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mbi",
+        "clear": "Mubi",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "nfk",
+        "clear": "Netflix Kids",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pty",
+        "clear": "Pantaya",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "bmg",
+        "clear": "Boomerang",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "umc",
+        "clear": "Urban Movie Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hvt",
+        "clear": "History Vault",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dvc",
+        "clear": "Dove Channel",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ytv",
+        "clear": "Yupp TV",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ern",
+        "clear": "Eros Now",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mns",
+        "clear": "Magnolia Selects",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "wwe",
+        "clear": "WWE Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mot",
+        "clear": "MyOutdoorTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "htv",
+        "clear": "Hopster TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "lol",
+        "clear": "Laugh Out Loud",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ssc",
+        "clear": "Smithsonian Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pux",
+        "clear": "Pure Flix",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hmm",
+        "clear": "Hallmark Movies",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "lmc",
+        "clear": "Lifetime Movie Club",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sfx",
+        "clear": "Spamflix",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "stv",
+        "clear": "Sling TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ptv",
+        "clear": "Pluto TV",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hdv",
+        "clear": "HiDive",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "vix",
+        "clear": "VIX ",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "nfp",
+        "clear": "Night Flight Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tpc",
+        "clear": "Topic",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mtv",
+        "clear": "MTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rtc",
+        "clear": "Retrocrush",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "cla",
+        "clear": "Classix",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dkk",
+        "clear": "Dekkoo",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sft",
+        "clear": "Shout! Factory TV",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "chf",
+        "clear": "Chai Flicks",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ovi",
+        "clear": "OVID",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mhz",
+        "clear": "Mhz Choice",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": false
+    },
+    {
+        "short": "tfd",
+        "clear": "The Film Detective",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "vtv",
+        "clear": "Vice TV ",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ctw",
+        "clear": "Cartoon Network",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ads",
+        "clear": "Adult Swim",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "usn",
+        "clear": "USA Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fus",
+        "clear": "Fox",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fxf",
+        "clear": "FlixFling",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "vik",
+        "clear": "Rakuten Viki",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "amo",
+        "clear": "AMC on Demand",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "dkm",
+        "clear": "Darkmatter TV",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tcm",
+        "clear": "TCM",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "brv",
+        "clear": "Bravo TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tnt",
+        "clear": "TNT",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fnw",
+        "clear": "Food Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "bca",
+        "clear": "BBC America",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ind",
+        "clear": "IndieFlix",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ahc",
+        "clear": "AHCTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tlc",
+        "clear": "TLC",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hgt",
+        "clear": "HGTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "diy",
+        "clear": "DIY Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "inv",
+        "clear": "Investigation Discovery",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sci",
+        "clear": "Science Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dea",
+        "clear": "Destination America",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "apl",
+        "clear": "Animal Planet",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dil",
+        "clear": "Discovery Life",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dis",
+        "clear": "Discovery",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mtr",
+        "clear": "Motor Trend",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "coo",
+        "clear": "Cooking Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tra",
+        "clear": "Travel Channel",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pnw",
+        "clear": "Paramount Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hrv",
+        "clear": "Here TV",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tvl",
+        "clear": "TV Land",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "ltv",
+        "clear": "Logo TV",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "vho",
+        "clear": "VH1",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fpm",
+        "clear": "Flix Premiere",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tus",
+        "clear": "TBS",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "asc",
+        "clear": "AsianCrush",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "flr",
+        "clear": "FILMRISE",
+        "subscription": false,
+        "adsupported": true,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rvy",
+        "clear": "Revry",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dsv",
+        "clear": "DOCSVILLE",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "rst",
+        "clear": "Rooster Teeth",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "sod",
+        "clear": "Spectrum On Demand",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "oxy",
+        "clear": "OXYGEN",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "hyh",
+        "clear": "Hi-YAH",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "vrv",
+        "clear": "VRV",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "tru",
+        "clear": "tru TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dnw",
+        "clear": "DisneyNOW",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "wet",
+        "clear": "WeTV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "dpu",
+        "clear": "Discovery Plus",
+        "subscription": true,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "awp",
+        "clear": "ARROW",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "plx",
+        "clear": "Plex",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "wow",
+        "clear": "WOW Presents Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "alm",
+        "clear": "Alamo on Demand",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "mgl",
+        "clear": "Magellan TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "bhd",
+        "clear": "BroadwayHD",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "own",
+        "clear": "The Oprah Winfrey Network",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fmz",
+        "clear": "Filmzie",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mvt",
+        "clear": "MovieSaints",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "dog",
+        "clear": "Dogwoof On Demand",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "trs",
+        "clear": "True Story",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "mst",
+        "clear": "Martha Stewart TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "daf",
+        "clear": "DocAlliance Films",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "bph",
+        "clear": "British Path\u00e9 TV",
+        "subscription": true,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "kor",
+        "clear": "KoreaOnDemand",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": true
+    },
+    {
+        "short": "hoc",
+        "clear": "Hoichoi",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "fmp",
+        "clear": "Film Movement Plus",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "iqi",
+        "clear": "iQIYI",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "mtg",
+        "clear": "Metrograph",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "aim",
+        "clear": "FreeVee",
+        "subscription": false,
+        "adsupported": true,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "cur",
+        "clear": "Curia",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "pdm",
+        "clear": "Public Domain Movies",
+        "subscription": false,
+        "adsupported": false,
+        "free": true,
+        "purchase": false,
+        "rental": false
+    },
+    {
+        "short": "knw",
+        "clear": "Kino Now",
+        "subscription": false,
+        "adsupported": false,
+        "free": false,
+        "purchase": true,
+        "rental": true
+    },
+    {
+        "short": "shd",
+        "clear": "Shudder",
+        "subscription": true,
+        "adsupported": false,
+        "free": false,
+        "purchase": false,
+        "rental": false
+    }
+]
