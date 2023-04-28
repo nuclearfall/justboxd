@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.2
+IMDbPY==2022.7.9
+json2html==1.3.0
+JustWatch==0.5.1
