@@ -2,6 +2,7 @@ import os
 import urllib.request
 import ssl
 import json
+import csv
 from json2html import *
 from bs4 import BeautifulSoup
 from justwatch import JustWatch
@@ -25,8 +26,27 @@ def check(key, val, alist, target=False):
 	if target is True:
 		return list(filter(lambda x: x[key] in val, alist))
 
+# need a parser class as there is extensive work to be done to be able to scrape all of this.
+def parseLetterboxdUrl(url):
+	splitter 		= [item for item in url[url.find('com')+4:].split('/') if item != '']
+	sort_types 		= ['popular', 'name', 'shuffle', 'added', 'date-earliest', 
+						'rating', 'rating-lowest', 'your-interest-liked']
+	kinds 			= ['watchlist', 'followers', 'films', 'list', 'likes']
+	kinds_extend  	= ['diary', 'reviews']
+	if len(splitter) < 2:
+		return []
+	username 		= splitter[0]
+	kind 			= splitter[1]
+	listname 		= splitter[1] if splitter[1] == 'watchlist' else splitter[2]
+	if len(splitter) > 2:
+		index 			= len(splitter) - 2
+		splitter	= splitter[0:index] if len(splitter) > 2 and splitter[index] == 'page' else splitter[0:]
+		sort 	 	= splitter[-1] if splitter[-2] == 'by' and splitter[-1] in sort_types else '' 
+
+
+parseLetterboxdUrl("https://letterboxd.com/grryboy/watchlist/by/popular/page/2/")
 JustboxdMovie 		= namedtuple('JustboxdMovie', 		
-						['title', 'year', 'providers', 'cover', 'url'])
+						['title', 'year', 'cover', 'providers', 'url'])
 JustboxdDisplay		= namedtuple('NewJustboxdMovie', ['cover', 'title', 'year', 'providers'])
 JustboxdList 		= namedtuple('JustboxdList', 		
 						['listname', 'username', 'movie_urls', 'url'])
@@ -79,7 +99,8 @@ def saveJson(data, path):
 		fp.write(json_data)
 		fp.close()
 	return True
-def saveHtml(data, path):
+
+def saveFile(data, path):
 	with open(path, 'w') as fp:
 		fp.write(data)
 		fp.close()
@@ -91,7 +112,7 @@ class Justboxd():
 		self.providers 		= loadProviders('../data/providers.json')
 		self.movies 		= loadMovies('../data/movies.json')
 		self.lists 			= loadLists('../data/lists.json')
-		self.free_services 	= list(filter(lambda x: x.free == True or x.adsupported == True, self.services))
+		self.free_services 	= list(filter(lambda x: (x.free == True or x.adsupported == True) and x.subscription == False, self.services))
 		self.subscriptions  = list(filter(lambda x: x.subscription == True, self.services))
 		self.country_code   = 'US'
 
@@ -152,13 +173,6 @@ class Justboxd():
 				cover = ''
 		return cover
 
-	# def updateMovie(self, movie):
-	# 		return			= JustboxdMovie(title=movie.title, 
-	# 										year=movie.year, 
-	# 										providers=self.getProviders(movie.title, movie.year),
-	# 										cover=self.getCover(movie.title, movie.year),
-	# 										url=url)
-	# takes a Movie namedtuple and returns a Movie namedtuple
 	def getProviders(self, movie, exclude=['buy', 'rent']):
 		title, year 		 	= movie
 		just_watch				= JustWatch(country=self.country_code)
@@ -179,7 +193,6 @@ class Justboxd():
 			return offers
 		except:
 			return []
-
 
 	# takes a url and returns a soup
 	def makeMovieSoup(self, url:str, tag_name:str) -> object:
@@ -259,14 +272,9 @@ class Justboxd():
 		mlist = self.lists[index]
 		return [m for m in self.movies if m.url in mlist.movie_urls]
 
-	# def parseLetterboxdUrl(self, url):
-	# 	excluder 		= ['https://', ':', '']
-	# 	isLetterboxd	= lambda x: 'letterboxd.com' in x.split('/') 
-	# 	splitUrl 		= [x for x in split.x('/') if x not in []
-	# 	isWatchlist = lambda x: x.startswith("https://") and split.x('/')
-
 	# def parseLetterboxdSlug(self, url):
-	# 	kinds 			= ['diary', 'review', 'personal', ]
+	# 	kinds 			= ['diary', 'review', 'personal']
+
 	def scrapeList(self, url, pages=50):
 		split 			= url.split('/')[3:]
 		username 		= split[0]
@@ -284,19 +292,14 @@ class Justboxd():
 		tags = map(lambda x: str(x).replace('&amp;','&'), tags)
 		tags = filter(lambda x : 'data-film-slug="' in x, tags)
 		movie_urls = list(map(lambda x:'https://letterboxd.com' + (stringFromIndex(x, 'data-film-slug="')), tags))
-		justboxd_list = JustboxdList(listname=listname, username=username, movie_urls=movie_urls, url=url)
-		return justboxd_list 
+		return JustboxdList(listname=listname, username=username, movie_urls=movie_urls, url=url)
 
 	def moviesFromList(self, url, update_all=False, add_new=True):
-		mlist = self.getList(url)
-		mlist_movies = [self.getMovie(url, update_all=update_all, add_new=add_new) for url in mlist.movie_urls]
-		return mlist_movies
+		mlist 			= self.getList(url)
+		return [self.getMovie(url, update_all=update_all, 
+								add_new=add_new) for url in mlist.movie_urls]
 
-	def searchMovies(self, **kwargs):
-
-	def displayFields(self, *values):
-		return [v for v in values]
-
+	# attempts to get the year if can't be found through letterboxd
 	def getYear(self, title):
 		just_watch				= JustWatch(country=self.country_code)
 		found_movies 			= just_watch.search_for_item(query=title)
@@ -308,7 +311,6 @@ class Justboxd():
 			return year
 		except:
 			return ''
-
 
 	def toHtml(self, data, path='../data/results.html'):
 		path = os.path.realpath(path)
@@ -322,25 +324,41 @@ class Justboxd():
 		unavailable = []
 		for d in display:
 			index = display.index(d)
-			d['cover'] = '<img src="' + d['cover'] + '" + " title="' + d['title'] + '"></img>'
+			d['cover'] = '<div><img src="' + d['cover'] + '" + " title="' + d['title'] + '"></img>'
+			d['title'] = d['title']
 			if d['year'] == -1:
 				d['year'] = ''
-				
-		for d in display:
+			else:
+				d['year'] = d['year'] + '</div>'
 
-			del(d['title'])
-		pprint(display)
-
-		html = json2html.convert(json=display)
-		html = html.replace('&quot;', '"')
-		html = html.replace('&lt;', '<')
-		html = html.replace('&gt;', '>')
-		styleline =  '<html><head><meta charset="utf-8"><style> html, body {width: 90%;height: 10%; margin: 0;padding: 0; background-color: grey7;}'
-		container = '#container {width: inherit; height: inherit; margin: 0; padding: 0;} </style></head>'
-		div = '<body><div id="container">'
-		html = styleline + container + div + html + '</div></body></html>'
-		saveHtml(html, path)
+		html 		= json2html.convert(json=display)
+		html 		= html.replace('&quot;', '"')
+		html 		= html.replace('&lt;', '<')
+		html 		= html.replace('&gt;', '>')
+		styleline 	=  '''<html><head><meta charset="utf-8"><style> html, body 
+						{width: 90%;height: 10%; margin: 0;padding: 0; background-color: grey7;}'''
+		container 	= '#container {width: inherit; height: inherit; margin: 0; padding: 0;} </style></head>'
+		div 		= '<body><div id="container">'
+		html 		= styleline + container + div + html + '</div></body></html>'
+		saveFile(html, path)
 		return path
+
+	def removeNoProviders(self, mlist):
+		return list(filter(lambda x: x,providers != [], mlist))
+
+	def toCsv(self, data, path='../data/movies.csv'):
+		mlist = [item._asdict() for item in self.removeNoProviders(data)]
+	
+		for movie in mlist:
+			if movie['year'] == -1:
+				movie['year'] = ''
+				
+		fieldnames = ['title', 'year', 'cover', 'providers', 'url']
+		with open(path, mode='w') as csv_file:
+		    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+		    writer.writeheader()
+		    for m in mlist:
+		    	writer.writerow(m)
 
 	def delProvider(self, text):
 		self.providers = list(filter(lambda x: x.clear != text, self.providers))
@@ -356,9 +374,8 @@ class Justboxd():
 if __name__ == '__main__':
 	mlist_url = "https://letterboxd.com/grryboy/watchlist/"
 	jb = Justboxd()
-	providers = ["Netflix", "Apple TV Plus", "Shudder", "Hulu", "Disney Plus", "HBO Max", "Hoopla", "Kanopy"]
+	jb.toCsv(jb.moviesFromList(mlist_url))
 
-	[jb.addProvider(p) for p in providers]
 	# movies = jb.moviesFromList(mlist_url, update_all=False)
 	# jb.toHtml(movies, path='../data/watchlist.html')
 
