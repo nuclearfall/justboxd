@@ -1,6 +1,6 @@
 # Mission for Analysis of Pabodie Expedition in advance of the Starkweather-Moore Expedition
 ## Introduction 
-Everyone knows of the Pabodie Expedition is well known <super> internationally for both the research potential </super> and the tragic loss of the Lake party, which was a sub-expedition, <img = https://duckduckgo.com/?t=iphone> </img>
+Everyone knows of the Pabodie Expedition is well known <super> internationally for both the research potential </super> and the tragic loss of the Lake party, which was a sub-expedition, <img src=https://duckduckgo.com/?t=iphone>  </img>
 who after revealing that they had made incredible findings at the base of a vast and unexplored mountain range.
 
 ## Summary 
@@ -132,8 +132,8 @@ You’ve been told that new accounts of the Pabodie expedition may involve the d
     _empahsis_ __emphasis__ -this- 
 
 
-  
-
+#cocrpg #games/rpg #games/rpg/coc
+#CallOfCthulhu
 
 
 
